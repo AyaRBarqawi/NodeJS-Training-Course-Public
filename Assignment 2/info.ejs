@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Device info.</title>
+</head>
+<body>
+  <h1 style="color: red;">Device Information :</h1>
+  <ul>
+    <li><strong>Username: </strong><%= deviceInfo.username %></li>
+    <li><strong>Home Directory: </strong><%= deviceInfo.homedir %></li>
+    <li><strong>Hostname: </strong><%= deviceInfo.hostname %></li>
+    <li><strong>Release: </strong><%= deviceInfo.release %></li>
+    <li><strong>Platform: </strong><%= deviceInfo.platform %></li>
+    <li><strong>Type: </strong><%= deviceInfo.type %></li>
+    <li><strong>Architecture: </strong><%= deviceInfo.arch %></li>
+    <li><strong>CPU(s): </strong><%= deviceInfo.cpus %></li>
+    <li><strong>Uptime: </strong><%= deviceInfo.uptime %> seconds</li>
+  </ul>
+
+  <!-- Create a button to  download the file -->
+</br>
+  <form action="/download" method="get">
+    <button type="submit">Download Info</button>
+  </form>
+
+</body>
+</html>
+
